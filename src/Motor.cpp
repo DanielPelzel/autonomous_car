@@ -5,11 +5,11 @@
 #include <Arduino.h>
 #include "Motor.h"
 
-Motor::Motor(uint8_t pinA, uint8_t pinB, uint8_t channel1, uint8_t channel2) {
-    this->pinA = pinA;
-    this->pinB = pinB;
-    this->channel1 = channel1;
-    this->channel2 = channel2;
+Motor::Motor(MotorPins pins) {
+    this->pinA = pins.pinA;
+    this->pinB = pins.pinB;
+    this->channel1 = pins.channel1;
+    this->channel2 = pins.channel2;
 
     ledcSetup(channel1, PWM_FREQUENCY, PWM_Bits);
     ledcAttachPin(pinA, channel1);

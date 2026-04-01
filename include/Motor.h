@@ -1,6 +1,12 @@
 #pragma once
 #include <cstdint>
 
+struct MotorPins {
+    uint8_t pinA;
+    uint8_t pinB;
+    uint8_t channel1;
+    uint8_t channel2;
+};
 
 /**
  * @brief Controls Dc Motor via L9110S Driver
@@ -27,7 +33,7 @@ public:
      * @param channel1 PWM Channel for pinA
      * @param channel2 PWM Channel for pinB
      */
-    Motor(uint8_t pinA, uint8_t pinB, uint8_t channel1, uint8_t channel2);
+    Motor(MotorPins pins);
 
     /**
      * @brief car drives forward
