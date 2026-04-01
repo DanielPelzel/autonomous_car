@@ -3,6 +3,13 @@
 //
 
 #include <Arduino.h>
+#include "car.h"
+
+MotorPins leftPins;
+MotorPins rightPins;
+SensorPins sensorPins;
+
+Car myCar(leftPins, rightPins, sensorPins);
 
 void setup() {
     Serial.begin(9600);

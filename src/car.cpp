@@ -35,3 +35,7 @@ void Car::turnLeft(int speed_percent) {
     rightMotor.forward(speed_percent);
     leftMotor.backward(speed_percent);
 }
+
+void Car::avoidObstacle() {
+//TODO add Code for Obstacle avoidance
+}

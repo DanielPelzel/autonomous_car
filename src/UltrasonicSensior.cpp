@@ -9,6 +9,8 @@ UltrasonicSensor::UltrasonicSensor(SensorPins pins) {
     this->trigPin = pins.trigPin;
     this->echoPin = pins.echoPin;
 }
+
+
 float UltrasonicSensor::getDistance() const{
     //Pin reset
     digitalWrite(trigPin, LOW);
