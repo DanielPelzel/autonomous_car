@@ -1,0 +1,37 @@
+\doxysection{Ultrasonic\+Sensor Class Reference}
+\hypertarget{class_ultrasonic_sensor}{}\label{class_ultrasonic_sensor}\index{UltrasonicSensor@{UltrasonicSensor}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_ultrasonic_sensor_acbcfcaf945aec1c1e6af87ac0950f68b}\label{class_ultrasonic_sensor_acbcfcaf945aec1c1e6af87ac0950f68b} 
+{\bfseries Ultrasonic\+Sensor} (\doxymbox{\hyperlink{struct_sensor_pins}{Sensor\+Pins}} pins)
+\item 
+float \doxymbox{\hyperlink{class_ultrasonic_sensor_a3c0480337738622f8e1fe719db2aef96}{get\+Distance}} () const
+\begin{DoxyCompactList}\small\item\em measures distance in cm \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_ultrasonic_sensor_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_ultrasonic_sensor_a3c0480337738622f8e1fe719db2aef96}\index{UltrasonicSensor@{UltrasonicSensor}!getDistance@{getDistance}}
+\index{getDistance@{getDistance}!UltrasonicSensor@{UltrasonicSensor}}
+\doxysubsubsection{\texorpdfstring{getDistance()}{getDistance()}}
+{\footnotesize\ttfamily \label{class_ultrasonic_sensor_a3c0480337738622f8e1fe719db2aef96} 
+float Ultrasonic\+Sensor::\+get\+Distance (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+measures distance in cm 
+
+\begin{DoxyNote}{Note}
+assumes speed of sound = 343 m/\+s at \texorpdfstring{$\sim$}{\string~}20°C room tempreture accuricy decreases at higer/\+lower temperetures precice for up to 4 meters 
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+distance in cm, return 400 of no object is detected 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+include/\+Ultrasonic\+\_\+sensor.\+h\item 
+src/\+Ultrasonic\+Sensior.\+cpp\end{DoxyCompactItemize}

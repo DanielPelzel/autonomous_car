@@ -1,0 +1,139 @@
+\doxysection{Car Class Reference}
+\hypertarget{class_car}{}\label{class_car}\index{Car@{Car}}
+
+
+Autonomous car with obstacle avoidance Uses two DC motors and one ultrasonic sensor.  
+
+
+
+
+{\ttfamily \+\#include $<$car.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_car_a7a9d76a9d6d157aaf73c1911bec853c3}{Car}} (\doxymbox{\hyperlink{struct_motor_pins}{Motor\+Pins}} left\+Pins, \doxymbox{\hyperlink{struct_motor_pins}{Motor\+Pins}} right\+Pins, \doxymbox{\hyperlink{struct_sensor_pins}{Sensor\+Pins}} sensor\+Pins)
+\item 
+void \doxymbox{\hyperlink{class_car_a5b7f3fd606b26ff17b0408fd09f09312}{drive\+Forward}} (int speed\+\_\+percent)
+\begin{DoxyCompactList}\small\item\em drives forward \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_car_a70f7d4dbf25e0510d091379fb166221d}{drive\+Backward}} (int speed\+\_\+percent)
+\begin{DoxyCompactList}\small\item\em drives backward \end{DoxyCompactList}\item 
+\Hypertarget{class_car_ace6af67a1ee7108794a9d1470b5f0b7a}\label{class_car_ace6af67a1ee7108794a9d1470b5f0b7a} 
+void {\bfseries stop} ()
+\begin{DoxyCompactList}\small\item\em stops \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_car_aaea612d009408b2cb159b742459c4fef}{turn\+Right}} (int speed\+\_\+percent)
+\begin{DoxyCompactList}\small\item\em turns right \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_car_ae26a61871d73b1fd193ee26548604db2}{turn\+Left}} (int speed\+\_\+percent)
+\begin{DoxyCompactList}\small\item\em turns left \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_car_a55501326f25c56f35a49766c21ca688b}{is\+Obstacle\+In\+Front}} ()
+\begin{DoxyCompactList}\small\item\em checks if obstacle is in front of the car \end{DoxyCompactList}\item 
+\Hypertarget{class_car_af36286b3ac6be0b3fc67d9660d6ad41e}\label{class_car_af36286b3ac6be0b3fc67d9660d6ad41e} 
+void {\bfseries avoid\+Obstacle} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Autonomous car with obstacle avoidance Uses two DC motors and one ultrasonic sensor. 
+
+\label{doc-constructors}
+\Hypertarget{class_car_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_car_a7a9d76a9d6d157aaf73c1911bec853c3}\index{Car@{Car}!Car@{Car}}
+\index{Car@{Car}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{Car()}{Car()}}
+{\footnotesize\ttfamily \label{class_car_a7a9d76a9d6d157aaf73c1911bec853c3} 
+Car::\+\+Car (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{struct_motor_pins}{Motor\+Pins}}}]{left\+Pins}{, }\item[{\doxymbox{\hyperlink{struct_motor_pins}{Motor\+Pins}}}]{right\+Pins}{, }\item[{\doxymbox{\hyperlink{struct_sensor_pins}{Sensor\+Pins}}}]{sensor\+Pins}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em left\+Pins} & \doxylink{class_motor}{Motor} pins for left motor \\
+\hline
+{\em right\+Pins} & motor pins for right motor \\
+\hline
+{\em sensor\+Pins} & sensor pins for ultrasonic sensor \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_car_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_car_a70f7d4dbf25e0510d091379fb166221d}\index{Car@{Car}!driveBackward@{driveBackward}}
+\index{driveBackward@{driveBackward}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{driveBackward()}{driveBackward()}}
+{\footnotesize\ttfamily \label{class_car_a70f7d4dbf25e0510d091379fb166221d} 
+void Car::\+drive\+Backward (\begin{DoxyParamCaption}\item[{int}]{speed\+\_\+percent}{}\end{DoxyParamCaption})}
+
+
+
+drives backward 
+
+
+\begin{DoxyParams}{Parameters}
+{\em speed\+\_\+percent} & speed in percent from 0-\/100 \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_car_a5b7f3fd606b26ff17b0408fd09f09312}\index{Car@{Car}!driveForward@{driveForward}}
+\index{driveForward@{driveForward}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{driveForward()}{driveForward()}}
+{\footnotesize\ttfamily \label{class_car_a5b7f3fd606b26ff17b0408fd09f09312} 
+void Car::\+drive\+Forward (\begin{DoxyParamCaption}\item[{int}]{speed\+\_\+percent}{}\end{DoxyParamCaption})}
+
+
+
+drives forward 
+
+
+\begin{DoxyParams}{Parameters}
+{\em speed\+\_\+percent} & speed in percent from 0-\/100 \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_car_a55501326f25c56f35a49766c21ca688b}\index{Car@{Car}!isObstacleInFront@{isObstacleInFront}}
+\index{isObstacleInFront@{isObstacleInFront}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{isObstacleInFront()}{isObstacleInFront()}}
+{\footnotesize\ttfamily \label{class_car_a55501326f25c56f35a49766c21ca688b} 
+bool Car::\+is\+Obstacle\+In\+Front (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+checks if obstacle is in front of the car 
+
+\begin{DoxyReturn}{Returns}
+true if obstacle is in front of the car 
+\end{DoxyReturn}
+\Hypertarget{class_car_ae26a61871d73b1fd193ee26548604db2}\index{Car@{Car}!turnLeft@{turnLeft}}
+\index{turnLeft@{turnLeft}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{turnLeft()}{turnLeft()}}
+{\footnotesize\ttfamily \label{class_car_ae26a61871d73b1fd193ee26548604db2} 
+void Car::\+turn\+Left (\begin{DoxyParamCaption}\item[{int}]{speed\+\_\+percent}{}\end{DoxyParamCaption})}
+
+
+
+turns left 
+
+
+\begin{DoxyParams}{Parameters}
+{\em speed\+\_\+percent} & speed in percent from 0-\/100 \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_car_aaea612d009408b2cb159b742459c4fef}\index{Car@{Car}!turnRight@{turnRight}}
+\index{turnRight@{turnRight}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{turnRight()}{turnRight()}}
+{\footnotesize\ttfamily \label{class_car_aaea612d009408b2cb159b742459c4fef} 
+void Car::\+turn\+Right (\begin{DoxyParamCaption}\item[{int}]{speed\+\_\+percent}{}\end{DoxyParamCaption})}
+
+
+
+turns right 
+
+
+\begin{DoxyParams}{Parameters}
+{\em speed\+\_\+percent} & speed in percent from 0-\/100 \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+include/\+car.\+h\item 
+src/\+car.\+cpp\end{DoxyCompactItemize}

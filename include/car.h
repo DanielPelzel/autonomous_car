@@ -51,11 +51,8 @@ public:
     void turnLeft(int speed_percent);
 
     /**
-     * @brief checks if obstacle is in front of the car
-     * @return true if obstacle is in front of the car
+     * @brief unction for autonomous drivig and obstacle avoidance
      */
-    bool isObstacleInFront();
-
     void avoidObstacle();
 
 };

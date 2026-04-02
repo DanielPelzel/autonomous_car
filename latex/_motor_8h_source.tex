@@ -1,0 +1,37 @@
+\doxysection{Motor.\+h}
+\hypertarget{_motor_8h_source}{}\label{_motor_8h_source}\index{include/Motor.h@{include/Motor.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <cstdint>}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{keyword}{struct\ }\doxymbox{\hyperlink{struct_motor_pins}{MotorPins}}\ \{}
+\DoxyCodeLine{00005\ \ \ \ \ uint8\_t\ pinA;}
+\DoxyCodeLine{00006\ \ \ \ \ uint8\_t\ pinB;}
+\DoxyCodeLine{00007\ \ \ \ \ uint8\_t\ channel1;}
+\DoxyCodeLine{00008\ \ \ \ \ uint8\_t\ channel2;}
+\DoxyCodeLine{00009\ \};}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_motor_aed64a556f8e8348e7d625d0a025736c2}{Motor}}\ \{}
+\DoxyCodeLine{00017\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{comment}{//Jeder\ Motor\ hat\ eigene\ Pins}}
+\DoxyCodeLine{00019\ \ \ \ \ uint8\_t\ pinA;\ \textcolor{comment}{//insert\ pin\ numbers}}
+\DoxyCodeLine{00020\ \ \ \ \ uint8\_t\ pinB;\ \textcolor{comment}{//insert\ pin\ numbers}}
+\DoxyCodeLine{00021\ \ \ \ \ uint8\_t\ channel1;\ \textcolor{comment}{//insert\ Channel\ number}}
+\DoxyCodeLine{00022\ \ \ \ \ uint8\_t\ channel2;\ \textcolor{comment}{//insert\ channel\ number}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ uint16\_t\ PWM\_FREQUENCY\ =\ 5000;}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ uint8\_t\ PWM\_Bits\ =\ 8;}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00036\ \ \ \ \ \doxymbox{\hyperlink{class_motor_aed64a556f8e8348e7d625d0a025736c2}{Motor}}(\doxymbox{\hyperlink{struct_motor_pins}{MotorPins}}\ pins);}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_motor_ac8a8a1389d6acd489e1e3aef9a66151a}{forward}}(\textcolor{keywordtype}{int}\ speed\_percent);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_motor_a6c7a513485195c0be20a3eb90186e5a2}{backward}}(\textcolor{keywordtype}{int}\ speed\_percent);}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_motor_a015fd5308d4d27e5dcf7f9ea3d5c03f6}{stop}}();}
+\DoxyCodeLine{00054\ \};}
+
+\end{DoxyCode}

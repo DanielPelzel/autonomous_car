@@ -1,0 +1,91 @@
+\doxysection{Motor Class Reference}
+\hypertarget{class_motor}{}\label{class_motor}\index{Motor@{Motor}}
+
+
+Controls Dc \doxylink{class_motor}{Motor} via L9110S Driver.  
+
+
+
+
+{\ttfamily \+\#include $<$Motor.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_motor_aed64a556f8e8348e7d625d0a025736c2}{Motor}} (\doxymbox{\hyperlink{struct_motor_pins}{Motor\+Pins}} pins)
+\item 
+void \doxymbox{\hyperlink{class_motor_ac8a8a1389d6acd489e1e3aef9a66151a}{forward}} (int speed\+\_\+percent)
+\begin{DoxyCompactList}\small\item\em car drives forward \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_motor_a6c7a513485195c0be20a3eb90186e5a2}{backward}} (int speed\+\_\+percent)
+\begin{DoxyCompactList}\small\item\em car drives backward \end{DoxyCompactList}\item 
+\Hypertarget{class_motor_a015fd5308d4d27e5dcf7f9ea3d5c03f6}\label{class_motor_a015fd5308d4d27e5dcf7f9ea3d5c03f6} 
+void {\bfseries stop} ()
+\begin{DoxyCompactList}\small\item\em car stops \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Controls Dc \doxylink{class_motor}{Motor} via L9110S Driver. 
+
+Uses two PWM signals (forward /\+ backwards) to control the \doxylink{class_motor}{Motor} 
+
+\label{doc-constructors}
+\Hypertarget{class_motor_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_motor_aed64a556f8e8348e7d625d0a025736c2}\index{Motor@{Motor}!Motor@{Motor}}
+\index{Motor@{Motor}!Motor@{Motor}}
+\doxysubsubsection{\texorpdfstring{Motor()}{Motor()}}
+{\footnotesize\ttfamily \label{class_motor_aed64a556f8e8348e7d625d0a025736c2} 
+Motor::\+\+Motor (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{struct_motor_pins}{Motor\+Pins}}}]{pins}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em pinA} & GPIO Pin forward \\
+\hline
+{\em pinB} & GPIO Pin backward \\
+\hline
+{\em channel1} & PWM Channel for pinA \\
+\hline
+{\em channel2} & PWM Channel for pinB \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_motor_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_motor_a6c7a513485195c0be20a3eb90186e5a2}\index{Motor@{Motor}!backward@{backward}}
+\index{backward@{backward}!Motor@{Motor}}
+\doxysubsubsection{\texorpdfstring{backward()}{backward()}}
+{\footnotesize\ttfamily \label{class_motor_a6c7a513485195c0be20a3eb90186e5a2} 
+void Motor::\+backward (\begin{DoxyParamCaption}\item[{int}]{speed\+\_\+percent}{}\end{DoxyParamCaption})}
+
+
+
+car drives backward 
+
+
+\begin{DoxyParams}{Parameters}
+{\em speed\+\_\+percent} & speed in percent (0-\/100) \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_motor_ac8a8a1389d6acd489e1e3aef9a66151a}\index{Motor@{Motor}!forward@{forward}}
+\index{forward@{forward}!Motor@{Motor}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{class_motor_ac8a8a1389d6acd489e1e3aef9a66151a} 
+void Motor::\+forward (\begin{DoxyParamCaption}\item[{int}]{speed\+\_\+percent}{}\end{DoxyParamCaption})}
+
+
+
+car drives forward 
+
+
+\begin{DoxyParams}{Parameters}
+{\em speed\+\_\+percent} & speed in percent (0-\/100) \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+include/\+Motor.\+h\item 
+src/\+Motor.\+cpp\end{DoxyCompactItemize}

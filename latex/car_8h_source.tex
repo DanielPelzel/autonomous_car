@@ -1,0 +1,34 @@
+\doxysection{car.\+h}
+\hypertarget{car_8h_source}{}\label{car_8h_source}\index{include/car.h@{include/car.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}Motor.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}Ultrasonic\_sensor.h"{}}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{class_car_a7a9d76a9d6d157aaf73c1911bec853c3}{Car}}\ \{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00011\ \ \ \ \ \doxymbox{\hyperlink{class_motor}{Motor}}\ leftMotor;}
+\DoxyCodeLine{00012\ \ \ \ \ \doxymbox{\hyperlink{class_motor}{Motor}}\ rightMotor;}
+\DoxyCodeLine{00013\ \ \ \ \ \doxymbox{\hyperlink{class_ultrasonic_sensor}{UltrasonicSensor}}\ ultrasonicSensor;}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \doxymbox{\hyperlink{class_car_a7a9d76a9d6d157aaf73c1911bec853c3}{Car}}(\doxymbox{\hyperlink{struct_motor_pins}{MotorPins}}\ leftPins,\ \doxymbox{\hyperlink{struct_motor_pins}{MotorPins}}\ rightPins,\ \doxymbox{\hyperlink{struct_sensor_pins}{SensorPins}}\ sensorPins);}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_car_a5b7f3fd606b26ff17b0408fd09f09312}{driveForward}}(\textcolor{keywordtype}{int}\ speed\_percent);}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_car_a70f7d4dbf25e0510d091379fb166221d}{driveBackward}}(\textcolor{keywordtype}{int}\ speed\_percent);}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_car_ace6af67a1ee7108794a9d1470b5f0b7a}{stop}}();}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_car_aaea612d009408b2cb159b742459c4fef}{turnRight}}(\textcolor{keywordtype}{int}\ speed\_percent);}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{class_car_ae26a61871d73b1fd193ee26548604db2}{turnLeft}}(\textcolor{keywordtype}{int}\ speed\_percent);}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{bool}\ \doxymbox{\hyperlink{class_car_a55501326f25c56f35a49766c21ca688b}{isObstacleInFront}}();}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{void}\ avoidObstacle();}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \};}
+
+\end{DoxyCode}
